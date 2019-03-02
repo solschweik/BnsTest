@@ -1,0 +1,36 @@
+.bns-navbar {
+  background-color: #563d7c !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+  border-radius: 3px;
+}
+
+.nav-item {
+  a {
+    color: #cbbde2;
+    cursor: pointer;
+  }
+}
+
+.bns-active-item > a {
+  color: white;
+  background-color: indigo;
+}
+
+.dropdown {
+  div {
+    background-color: #8a2be2;
+  }
+}
+
+li:hover {
+  color: white;
+}
+
+li > a > i {
+  padding-right: 3px;
+}

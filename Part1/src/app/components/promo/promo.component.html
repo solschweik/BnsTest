@@ -1,0 +1,20 @@
+<div class="bns-block-panel" *ngIf="svc.currentPromo | async as promo">
+  <div class="row">
+    <div class="offset-1 col-1 bns-block-lnk-col" style="padding-top: 2.5%; margin-right: 2%">
+      <a class="bns-block-lnk-title">This Month's Promotions</a>
+    </div>
+    <div class="col-9">
+      <div class="bns-block-title">{{promo.title}}</div>
+      {{promo.summary}}
+      <div>
+        <a class="bns-block-more" (click)="more=!more">
+          <i class="fa fa-angle-double-left" *ngIf="more"></i>
+          {{more ? 'Less' : 'More'}}
+          <i class="fa fa-angle-double-right" *ngIf="!more"></i>
+        </a>
+      </div>
+      <div *ngIf="more" class="col-11">{{promo.details}}</div>
+    </div>
+  </div>
+  <div class="bns-block-bottom-border"></div>
+</div>

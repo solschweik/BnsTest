@@ -1,0 +1,15 @@
+<div class="bns-block-panel" *ngIf="svc.menus | async as menus">
+  <div class="bns-menu-title">Our Menu</div>
+  <div *ngFor="let cat of menus">
+    <div class="bns-block-title bns-menu-cat-title">{{cat.category}}</div>
+    <div class="bns-menu-cat-info">{{cat.info}}</div>
+    <div class="row">
+      <div *ngFor="let item of cat.items" class="col-3">
+        <div class="bns-menu-item-name">{{item.name}}</div>
+        <div class="bns-menu-item-info">{{item.info}}</div>
+        <div>Price: ${{item.price}}</div>
+      </div>
+    </div>
+    <div class="bns-block-bottom-border"></div>
+  </div>
+</div>

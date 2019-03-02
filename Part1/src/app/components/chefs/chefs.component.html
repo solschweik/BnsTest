@@ -1,0 +1,17 @@
+<div class="bns-block-panel" *ngIf="svc.info | async as info">
+  <div class="bns-block-title">{{info.name}}</div>
+  <div class="bns-chef-title">{{info.title}}</div>
+  <div class="row">
+    <div class="col-9">{{info.info}}</div>
+    <div class="offset-1 col-2 bns-block-lnk-col">
+      <a class="bns-block-lnk-title">Meet our Culinary Specialists</a>
+    </div>
+  </div>
+  <a class="bns-block-more" (click)="more = !more">
+    <i class="fa fa-angle-double-left" *ngIf="more"></i>
+    {{more ? 'Less' : 'More'}}
+    <i class="fa fa-angle-double-right" *ngIf="!more"></i>
+  </a>
+  <div *ngIf="more" class="offset-1 col-9">{{info.info}}</div>
+  <div class="bns-block-bottom-border"></div>
+</div>

@@ -1,0 +1,30 @@
+.bns-block-panel {
+  padding-left: 5%;
+  padding-top: 1%;
+
+  .bns-block-lnk-col {
+    text-align: center;
+    line-height: 0.9;
+  }
+
+  .bns-block-lnk-title {
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.1em;
+  }
+
+  .bns-block-title {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  .bns-block-more {
+    cursor: pointer;
+    color: blue !important;
+  }
+
+  .bns-block-bottom-border {
+    border-bottom: solid 1px lightgrey;
+    padding-top: 1%;
+  }
+}

@@ -1,0 +1,34 @@
+.bns-block-panel {
+  .bns-menu-title {
+    font-size: 2em;
+    color: #563d7c;
+    margin-bottom: 1%;
+    text-decoration: underline;
+  }
+
+  .bns-menu-cat-title {
+    text-align: center;
+    font-size: 1.4em;
+    margin-bottom: 1%;
+    color: indigo;
+  }
+
+  .bns-menu-cat-info {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 1%;
+    color: #9370DB;
+  }
+
+  .bns-menu-item-name {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 0.5%;
+  }
+
+  .bns-menu-item-info {
+    font-size: 0.9em;
+    font-style: italic;
+    margin-bottom: 0.5%;
+  }
+}
