@@ -35,10 +35,8 @@ This part implements Sudoku grid verification algorithm
 It's done both in Java and Typescript (JavaScript).
 
 __NOTE:__ This project contains some unit tests. It's runnable in Eclipse. 
-
-Open AllTests.java. 
-
-Right-click and Run As / Junit Test
+1. Open _AllTests.java_. 
+2. Right-click and _Run As / Junit Test_
 
 ### TypeScript (JavaScript) version
 
