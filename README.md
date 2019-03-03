@@ -1,6 +1,7 @@
 # BNS Assignment
 ## Prerequesites
-*At least* Node.js version 8.11.2
+*At least* 
+Node.js version 8.11.2
 Java 9.0.1
 
 Eclipse IDE Oxygen
@@ -8,7 +9,7 @@ Eclipse IDE Oxygen
 ## Part 1
 Contains Angular 7 application.
 The use is no different from any other Angular project.
-TO start application, please, run following commands in command shell 
+To start application, please, run following commands in command shell 
 
 _cd BnsTest_
 _cd Part1_
