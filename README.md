@@ -31,7 +31,7 @@ Open application URL in your browser http://localhost:1111
 
 ## Part 2
 
-This part implements Sudoku grid verification algorithm
+This part implements Sudoku grid verification algorithm.
 It's done both in Java and Typescript (JavaScript).
 
 ### TypeScript (JavaScript) version
@@ -54,6 +54,11 @@ _node js\sudoku.js numbers_
 
 ### Java Version
 
+__NOTE:__ Java project contains some unit tests. It's runnable in Eclipse. 
+1. Open _AllTests.java_. 
+2. Right-click and _Run As / Junit Test_
+
+#### Importing and Running Project
 1. Open new workspace
 2. Open _File / Import... / General / Existing Project into Workspace_
 3. Click Next
