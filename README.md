@@ -12,6 +12,7 @@ The use is no different from any other Angular project.
 To start application, please, run following commands in command shell 
 
 _cd BnsTest_
+
 _cd Part1_
 
 _npm install_
@@ -36,7 +37,9 @@ It's done both in Java and Typescript (JavaScript).
 To run the application follow this instructions:
 
 _cd BnsTest_
+
 _cd Part2_
+
 _npm install_
 
 On UNIX (assuming Node.js is in PATH):
