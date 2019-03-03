@@ -9,8 +9,8 @@ Java 9.0.1
 Eclipse IDE Oxygen
 
 ## Part 1
-Contains Angular 7 application.
-The use is no different from any other Angular project.
+Contains Angular 7 application.  
+The use is no different from any other Angular project.  
 To start application, please, run following commands in command shell 
 
 _cd BnsTest_
@@ -31,7 +31,7 @@ Open application URL in your browser http://localhost:1111
 
 ## Part 2
 
-This part implements Sudoku grid verification algorithm.
+This part implements Sudoku grid verification algorithm.  
 It's done both in Java and Typescript (JavaScript).
 
 ### TypeScript (JavaScript) version
@@ -54,9 +54,10 @@ _node js\sudoku.js numbers_
 
 ### Java Version
 
-__NOTE:__ Java project contains some unit tests. It's runnable in Eclipse. 
-1. Open _AllTests.java_. 
-2. Right-click and _Run As / Junit Test_
+__NOTE:__ Java project contains some unit tests.  
+It's runnable in Eclipse. 
+- Open _AllTests.java_. 
+- Right-click and _Run As / Junit Test_
 
 #### Importing and Running Project
 1. Open new workspace
