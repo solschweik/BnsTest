@@ -48,7 +48,7 @@ _node js/sudoku.js numbers_
 
 On Windows:
 
-_node js\sudoku.js number_
+_node js\sudoku.js numbers_
 
 ### Java Version
 
