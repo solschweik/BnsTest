@@ -27,8 +27,13 @@
   }
 }
 
-li:hover {
+.nav-item a:hover {
   color: white;
+}
+
+.dropdown-item:hover {
+  color: green;
+  background-color: #cbbde2;
 }
 
 li > a > i {
