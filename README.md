@@ -1,7 +1,9 @@
 # BNS Assignment
 ## Prerequesites
 *At least* 
+
 Node.js version 8.11.2
+
 Java 9.0.1
 
 Eclipse IDE Oxygen
@@ -70,4 +72,5 @@ stdout: "Please, provide file name!"
 13. Click on _Arguments_ tab
 14. In _Program Arguments_ type _numbers_
 15. Click _Run_
+
 stdout should now show "File is valid!"
