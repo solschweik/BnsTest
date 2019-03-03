@@ -1,12 +1,11 @@
 # BNS Assignment
 ## Prerequesites
-*At least* 
+Please, have *at least* following tools installed  
+And available in PATH:
 
-Node.js version 8.11.2
-
-Java 9.0.1
-
-Eclipse IDE Oxygen
+- Node.js version 8.11.2  
+- Java 9.0.1  
+- Eclipse IDE Oxygen
 
 ## Part 1
 Contains Angular 7 application.  
