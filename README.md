@@ -43,13 +43,21 @@ _cd Part2_
 
 _npm install_
 
-On UNIX (assuming Node.js is in PATH):
+__On UNIX (assuming Node.js is in PATH):__
 
 _node js/sudoku.js numbers_
 
-On Windows:
+OR (using _ts_node_)
 
-_node js\sudoku.js numbers_
+_./node_modules/.bin/ts-node js/sudoku.ts numbers_  
+
+__On Windows:__
+
+_node js\sudoku.js numbers_  
+
+OR (using _ts_node_) 
+
+_node_modules\\.bin\ts-node js\sudoku.ts numbers_  
 
 ### Java Version
 
