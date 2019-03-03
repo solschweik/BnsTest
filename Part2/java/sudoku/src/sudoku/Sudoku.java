@@ -70,7 +70,7 @@ public class Sudoku {
 		}
 	}
 	
-	private static void doIt(Integer v, int ndx, List<Integer> res) {
+	public static void doIt(Integer v, int ndx, List<Integer> res) {
 		if (ndx <= 0) {
 			res.add(v);
 			return;
@@ -83,7 +83,7 @@ public class Sudoku {
 		doIt(((Double)(v - (cv * Math.pow(10, ndx)))).intValue(), ndx-1, res);
 	}
 	
-	private static List<String> checkLine(List<Integer> l) {
+	public static List<String> checkLine(List<Integer> l) {
 		List<String> err = new LinkedList<String>();
 		IntStream.range(1, 10).forEach(v -> {
 			if (l.indexOf(v) <= -1) {
@@ -93,7 +93,7 @@ public class Sudoku {
 		return err.isEmpty() ? null : err;
 	}
 	
-	private static List<String> checkVerticalLine(List<List<Integer>> l, int ndx) {
+	public static List<String> checkVerticalLine(List<List<Integer>> l, int ndx) {
 		List<Integer> vl = l.stream().map(li -> li.get(ndx)).collect(Collectors.toList());
 		return checkLine(vl);
 	}
