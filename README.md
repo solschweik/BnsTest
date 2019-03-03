@@ -2,6 +2,7 @@
 ## Prerequesites
 *At least* Node.js version 8.11.2
 Java 9.0.1
+
 Eclipse IDE Oxygen
 
 ## Part 1
