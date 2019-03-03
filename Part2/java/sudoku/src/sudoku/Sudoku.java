@@ -33,7 +33,7 @@ public class Sudoku {
 				.boxed()
 				.map(v -> {
 					List<Integer> r = new LinkedList<Integer>();
-					doIt(v, 8, r);
+					intToDigits(v, 8, r);
 					return r;
 				})
 				.collect(Collectors.toList());
@@ -69,7 +69,13 @@ public class Sudoku {
 		}
 	}
 	
-	public static void doIt(Integer v, int ndx, List<Integer> res) {
+	/**
+	 * This method converts input integer into list of digits it's made of, e.g. 901287 to [9, 0, 1, 2, 8, 7];
+	 * @param v - integer to convert to digits;
+	 * @param ndx - current position in the integer being processed;
+	 * @param res - resulting list; 
+	 */
+	public static void intToDigits(Integer v, int ndx, List<Integer> res) {
 		if (ndx <= 0) {
 			res.add(v);
 			return;
@@ -79,9 +85,14 @@ public class Sudoku {
 		if (cv > 0 && cv <= 9) {
 			res.add(cv);
 		}
-		doIt(((Double)(v - (cv * Math.pow(10, ndx)))).intValue(), ndx-1, res);
+		intToDigits(((Double)(v - (cv * Math.pow(10, ndx)))).intValue(), ndx-1, res);
 	}
 	
+	/**
+	 * Validates list of digits, whether it contains all numbers from 1 to 9.
+	 * @param l - input list
+	 * @return - null if list contains all numbers, or list of missing numbers otherwise.
+	 */
 	public static List<String> checkLine(List<Integer> l) {
 		List<String> err = new LinkedList<String>();
 		IntStream.range(1, 10).forEach(v -> {
@@ -92,6 +103,12 @@ public class Sudoku {
 		return err.isEmpty() ? null : err;
 	}
 	
+	/**
+	 * Checks that vertical line in Sudoku grid contains all numbers from 1 to 9.
+	 * @param l - full Sudoku grid.
+	 * @param ndx - vertical row ndx in provided Sudoku grid;
+	 * @return - null if list contains all numbers, or list of missing numbers otherwise.
+	 */
 	public static List<String> checkVerticalLine(List<List<Integer>> l, int ndx) {
 		List<Integer> vl = l.stream().map(li -> li.get(ndx)).collect(Collectors.toList());
 		return checkLine(vl);
