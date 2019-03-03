@@ -8,7 +8,6 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class Sudoku {
-
 	public static void main(String[] args) {
 		if (args.length != 1) {
 			System.err.println("Please, provide file name!");
@@ -97,5 +96,4 @@ public class Sudoku {
 		List<Integer> vl = l.stream().map(li -> li.get(ndx)).collect(Collectors.toList());
 		return checkLine(vl);
 	}
-
 }
