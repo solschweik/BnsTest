@@ -23,7 +23,7 @@ _./node_modules/.bin/ng serve --port 1111_
 
 For Windows use this command:
 
-_node_modules\.bin\ng serve --port 1111_
+_node_modules\\.bin\ng serve --port 1111_
 
 Open application URL in your browser http://localhost:1111
 
