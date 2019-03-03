@@ -2,7 +2,7 @@
   <div class="bns-menu-title">
     <i class="fa fa-bars" style="margin-right: 5px;"></i>Our Menu</div>
   <div *ngFor="let cat of menus">
-    <div class="bns-block-title bns-menu-cat-title">{{cat.category}}</div>
+    <div class="bns-block-title bns-menu-cat-title" [id]="cat.category.split(' ')[0]">{{cat.category}}</div>
     <div class="bns-menu-cat-info">{{cat.info}}</div>
     <div class="card-group">
       <div *ngFor="let item of cat.items" class="card">

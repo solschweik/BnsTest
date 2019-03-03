@@ -12,32 +12,6 @@ export class MenuService {
   // noinspection JSMethodCanBeStatic
   get menus(): Observable<any[]> {
     return of([{
-      category: 'SANDWICHES & BURGERS',
-      info: `Served with your choice of French fries or coleslaw.`,
-      items: [{
-        name: 'BIG DEVIL BURGER',
-        img: 'BidDevilBurger.jpeg',
-        info: `8 oz. freshly ground chuck, onion rings, tomatoes, Swiss cheese, smoked bacon, sweet & spicy BBQ sauce`,
-        price: 19
-      },
-        {
-          name: 'BÂTON ROUGE BURGER',
-          img: 'BatonRougeBurger.jpg',
-          info: 'Half-pound of premium beef, smoked bacon, Monterey Jack cheese, lettuce, tomato, red onions, Dijonnaise sauce',
-          price: 18
-        }, {
-          name: 'SUPER BURGER',
-          img: 'SuperBurger.jpg',
-          info: `8 oz. freshly ground chuck, onion rings, tomatoes, Swiss cheese, smoked bacon, sweet & spicy BBQ sauce`,
-          price: 19
-        },
-        {
-          name: 'Macky Mc Mac BURGER',
-          img: 'SomethingBurger.jpeg',
-          info: 'Half-pound of premium beef, smoked bacon, Monterey Jack cheese, lettuce, tomato, red onions, Dijonnaise sauce',
-          price: 18
-        }]
-    }, {
         category: 'APPETIZERS',
         info: '',
         items: [{
@@ -89,7 +63,32 @@ export class MenuService {
             info: 'Sesame seared-rare Ahi tuna, mixed greens, roasted edamame, lime-ginger dressing',
             price: 25
           }]
-      }
-    ]);
+      }, {
+      category: 'SANDWICHES & BURGERS',
+      info: `Served with your choice of French fries or coleslaw.`,
+      items: [{
+        name: 'BIG DEVIL BURGER',
+        img: 'BidDevilBurger.jpeg',
+        info: `8 oz. freshly ground chuck, onion rings, tomatoes, Swiss cheese, smoked bacon, sweet & spicy BBQ sauce`,
+        price: 19
+      },
+        {
+          name: 'BÂTON ROUGE BURGER',
+          img: 'BatonRougeBurger.jpg',
+          info: 'Half-pound of premium beef, smoked bacon, Monterey Jack cheese, lettuce, tomato, red onions, Dijonnaise sauce',
+          price: 18
+        }, {
+          name: 'SUPER BURGER',
+          img: 'SuperBurger.jpg',
+          info: `8 oz. freshly ground chuck, onion rings, tomatoes, Swiss cheese, smoked bacon, sweet & spicy BBQ sauce`,
+          price: 19
+        },
+        {
+          name: 'Macky Mc Mac BURGER',
+          img: 'SomethingBurger.jpeg',
+          info: 'Half-pound of premium beef, smoked bacon, Monterey Jack cheese, lettuce, tomato, red onions, Dijonnaise sauce',
+          price: 18
+        }]
+    }]);
   }
 }
