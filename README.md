@@ -31,7 +31,7 @@ Open application URL in your browser http://localhost:1111
 
 ## Part 2
 
-This part implements Sudoku grid verification algorithm
+This part implements Sudoku grid verification algorithm.
 It's done both in Java and Typescript (JavaScript).
 
 __NOTE:__ This project contains some unit tests. It's runnable in Eclipse. 
