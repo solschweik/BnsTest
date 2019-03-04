@@ -1,6 +1,7 @@
 package sudoku;
 
 import java.io.File;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
@@ -31,11 +32,7 @@ public class Sudoku {
 
 		List<List<Integer>> res = arr.stream().mapToInt(v -> Integer.parseInt(v))
 				.boxed()
-				.map(v -> {
-					List<Integer> r = new LinkedList<Integer>();
-					intToDigits(v, 8, r);
-					return r;
-				})
+				.map(v -> toDigits(v))
 				.collect(Collectors.toList());
 		
 		boolean errorFound = false;
@@ -69,23 +66,9 @@ public class Sudoku {
 		}
 	}
 	
-	/**
-	 * This method converts input integer into list of digits it's made of, e.g. 901287 to [9, 0, 1, 2, 8, 7];
-	 * @param v - integer to convert to digits;
-	 * @param ndx - current position in the integer being processed;
-	 * @param res - resulting list; 
-	 */
-	public static void intToDigits(Integer v, int ndx, List<Integer> res) {
-		if (ndx <= 0) {
-			res.add(v);
-			return;
-		}
-		Double d = Math.floor(v / Math.pow(10, ndx));
-		int cv = d.intValue();
-		if (cv > 0 && cv <= 9) {
-			res.add(cv);
-		}
-		intToDigits(((Double)(v - (cv * Math.pow(10, ndx)))).intValue(), ndx-1, res);
+	public static List<Integer> toDigits(int v) {
+		int[] arr = Integer.toString(v).chars().map(c -> c-'0').toArray();
+		return Arrays.stream(arr).boxed().collect(Collectors.toList());
 	}
 	
 	/**

@@ -10,22 +10,19 @@ public class Test {
 
 	@org.junit.Test
 	public void testIntToDigitsPos() {
-		List<Integer> res = new LinkedList<Integer>();
-		Sudoku.intToDigits(1234567890, 9, res);
+		List<Integer> res = Sudoku.toDigits(1234567890);
 		assertArrayEquals(new Integer[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 0}, res.toArray());
 	}
 	
 	@org.junit.Test
 	public void testIntToDigitsNeg() {
-		List<Integer> res = new LinkedList<Integer>();
-		Sudoku.intToDigits(123456000, 9, res);
+		List<Integer> res = Sudoku.toDigits(123456000);
 		assertNotEquals(new Integer[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 0}, res.toArray());
 	}
 
 	@org.junit.Test
 	public void testCheckLinePos() {
-		List<Integer> res = new LinkedList<Integer>();
-		Sudoku.intToDigits(123456789, 8, res);
+		List<Integer> res = Sudoku.toDigits(123456789);
 		
 		List<String> errList = Sudoku.checkLine(res);
 		assertNull(errList);
@@ -33,8 +30,7 @@ public class Test {
 	
 	@org.junit.Test
 	public void testCheckLineNeg() {
-		List<Integer> res = new LinkedList<Integer>();
-		Sudoku.intToDigits(124459789, 8, res);
+		List<Integer> res = Sudoku.toDigits(124459789);
 		
 		List<String> errList = Sudoku.checkLine(res);
 		assertNotNull(errList);
